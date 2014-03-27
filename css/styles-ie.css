@@ -1,0 +1,141 @@
+html { font-size: 100%; }
+
+#ContentContainer {
+    height: 500px;
+
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+
+  width: 910px;
+
+    padding-bottom: 65px;
+}
+    #ContentContainer .container {
+        padding-bottom: 0px;
+    }
+#TrackITHeader h1 {
+    text-align: center;
+    color: red;
+}
+.column {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.page-wrap {
+    min-height: 100%;
+    /* equal to footer height */
+    margin-bottom: -60px; 
+}
+.page-wrap:after {
+    content: "";
+    display: block;
+}
+.site-footer, .page-wrap:after {
+/* .push must be the same height as footer */
+    height: 60px; 
+}
+.site-footer {
+    background-color: #32434d;
+    color: white;
+    font-size: 12px;
+    padding-top: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+#CompuComHeader {
+    margin-top: 20px;
+}
+    #CompuComHeader img {
+        width: 165px;
+    }
+.container {
+      margin: 0 auto;
+      max-width: 48rem;
+      padding: 20px 0 65px 0;
+}
+#TrackITHeader {
+
+}
+    #TrackITHeader h1 {
+        font-weight: 400;
+        -moz-box-shadow:    3px 3px 5px 6px #ccc;
+        -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+        box-shadow:         3px 3px 5px 6px #ccc;
+    }
+#TrackITLogo {
+    min-width: 300px;
+}
+    #TrackITLogo img {
+        width: 250px;
+        display: block;
+        margin: 50px auto 0 auto;
+    }
+#TrackITDescription {
+    width: 475px;
+    color: white;
+}
+    #TrackITDescription h1 {
+        font-weight: 300;
+        font-size: 30px;
+        text-align: left;
+    }
+    #TrackITDescription p {
+        font-weight: 400;
+        text-align: left;
+    }
+#TextWrapper {
+    background: white;
+}
+#CopyContainer {
+    color: #333333;
+    background: white;
+
+}
+.blueButton {
+    background: blue;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 3px;
+}
+.shadow {
+    -moz-text-shadow:    0px 0px 5px #000;
+    -webkit-text-shadow: 0px 0px 5px #000;
+    text-shadow:         0px 0px 5px #000;
+}
+
+.button {
+    padding: 10px 20px 10px 20px;
+    background: blue;
+    color: white;
+    text-align: center;
+    border-radius: 3px;
+    margin-bottom: 30px;
+    margin-top: 70px;
+    margin-right: 0;
+    margin-left: 0;
+    max-width: 300px;
+
+}
+.bluebutton {
+    background: #608bf7;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+    .column {
+        float: left;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .column.full { width: 100%; }
+    .column.two-thirds { width: 66.7%; }
+    .column.half { width: 50%; }
+    .column.third { width: 33.3%; }
+    .column.fourth { width: 24.95%; }
+    .column.flow-opposite { float: right; } 

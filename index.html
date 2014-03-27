@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    
+
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tenderle</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+
+        <style>
+            /* Small screens (default) */
+            html { font-size: 100%; }
+            html, body {
+                height: 100%;
+                
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+            #Body
+            #BodyContainer {
+                
+            }
+            #ContentContainer {
+                max-width: 1000px;
+                margin: 0 auto;
+                padding-top: 60px;
+            }
+                #ContentContainer .container {
+                    padding-bottom: 0px;
+                }
+            #TenderleHeader h1 {
+                text-align: center;
+                color: red;
+            }
+            .column {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+            
+            .page-wrap {
+                min-height: 100%;
+                /* equal to footer height */
+                margin-bottom: -60px; 
+            }
+            .page-wrap:after {
+                content: "";
+                display: block;
+            }
+            .site-footer, .page-wrap:after {
+            /* .push must be the same height as footer */
+                height: 60px; 
+            }
+            .site-footer {
+                background-color: #32434d;
+                color: white;
+                font-size: 12px;
+                padding-top: 10px;
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+            #TenderleHeader {
+                padding-top: 0px;
+                background-color: #f0f2f4;
+            }
+                #TenderleHeader img {
+                    width: 100px;
+                }
+            .container {
+                  margin: 0 auto;
+                  max-width: 48rem;
+                  padding: 20px 0 65px 0;
+            }
+            #TenderleHeader {
+
+            }
+                #TenderleHeader h1 {
+                    font-weight: 400;
+                    -moz-box-shadow:    3px 3px 5px 6px #ccc;
+                    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+                    box-shadow:         3px 3px 5px 6px #ccc;
+                }
+            #TenderleLogo {
+                
+            }
+                #TenderleLogo img {
+                    width: 100px;
+                    display: table;
+                    margin: 50px auto 0 auto;
+                }
+            #TenderleDescription {
+                
+                color: #333333;
+            }
+                #TenderleDescription h1 {
+                    font-weight: 400;
+                    font-size: 24px;
+                    text-align: center;
+                }
+                #TenderleDescription p {
+                    font-weight: 400;
+                    text-align: center;
+                }
+            #TextWrapper {
+                background: white;
+            }
+            #CopyContainer {
+                color: #333333;
+                background: white;
+
+            }
+            .blueButton {
+                background: blue;
+                color: white;
+                padding: 10px 20px 10px 20px;
+                border-radius: 3px;
+            }
+            .shadow {
+                -moz-text-shadow:    0px 0px 5px #000;
+                -webkit-text-shadow: 0px 0px 5px #000;
+                text-shadow:         0px 0px 5px #000;
+            }
+
+            .button {
+                padding: 10px 20px 10px 20px;
+                background: blue;
+                color: white;
+                text-align: center;
+                border-radius: 3px;
+                margin-bottom: 30px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            .bluebutton {
+                background: #608bf7;
+            }
+            a {
+                text-decoration: none;
+                color: white;
+            }
+
+            #LoginModel {
+                background-color: #f6f6f6;
+                padding: 25px;
+                -moz-box-shadow:    3px 3px 3px 3px #ccc;
+                -webkit-box-shadow: 3px 3px 3px 3px #ccc;
+                box-shadow:         3px 3px 3px 3px #ccc;
+            }
+                #LoginModel p {
+                    font-size: 14px;
+                }
+                #LoginModel input {
+                    font-size: 14px;
+                    width: 100%;
+                }
+                #LoginModel .button {
+                    background-color: #ff8130;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+
+
+
+
+
+
+
+            /*-------------   RESPONSIVE CSS   ------------*/
+
+            @media (min-width: 370px) { 
+                .button {
+                    max-width: 300px;
+
+                }
+            }
+
+
+             
+            /* Medium screens (640px) */
+            @media (min-width: 40rem) { 
+                html { font-size: 107%; }
+                .column {
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                }
+                #TenderleHeader {
+                    
+                }
+                    #TenderleHeader img {
+                        width: 165px;
+                    }
+                #ContentContainer {
+                    height: 500px;
+                    max-width: 900px;                    
+                    padding-bottom: 65px;
+                }
+                #TenderleDescription {
+                    max-width: 475px;
+                }
+                    #TenderleDescription h1 {
+                        font-weight: 300;
+                        text-align: left;
+
+                    }
+                    #TenderleDescription p {                    
+                        text-align: left;
+
+                    }
+                #TenderleLogo img {
+                    width: 230px;
+                }
+                .button {
+                    max-width: 300px;
+                    margin-top: 70px;
+                    margin-right: 0;
+                    margin-left: 0;
+                }
+            }
+
+            @media (min-width: 700px) { 
+                #TenderleDescription h1 {
+                    font-weight: 300;
+                    font-size: 30px;
+                    text-align: left;
+                } 
+            }
+
+
+            @media (min-width: 475px) { 
+                #TenderleLogo {
+                    
+                }
+                    #TenderleLogo img {
+                        width: 150px;
+                    }   
+                .button {
+                    margin-top: 50px;
+                }
+            }
+
+
+            @media (min-width: 55rem) {
+                #TenderleLogo img {
+                    width: 250px;
+                }
+            }
+         
+            /* Large screens (1024px) */
+            @media (min-width: 64rem) { 
+                html { font-size: 112%; }
+                #TenderleLogo img {
+                    width: 250px;
+                }
+
+                
+            }
+
+            @media (min-width: 40rem) {
+                .column {
+                    float: left;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                }
+
+                .column.full { width: 100%; }
+                .column.two-thirds { width: 66.7%; }
+                .column.half { width: 50%; }
+                .column.third { width: 33.3%; }
+                .column.fourth { width: 24.95%; }
+                .column.flow-opposite { float: right; }  
+            }  
+
+            @media (min-width: 40rem) {
+                .column.flow-opposite { float: right; }
+            }
+        </style>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" media="all" href="css/styles-ie.css"/>
+        <![endif]-->
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" media="all" href="css/styles-ie.css"/>
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <link rel="stylesheet" type="text/css" media="all" href="css/styles-ie.css"/>
+        <![endif]-->
+
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div id="BodyContainer" class="page-wrap">
+
+
+            <div class="row clearfix">
+                    <div id="TenderleHeader" class="column full">
+                        <div id="TenderleHeader">
+                            <img src="img/CompuComLogo.png">
+                        </div>
+                    </div>  
+                </div>
+
+            <div id="ContentContainer">
+
+                
+                <div class="column half">
+                    <div id="TenderleDescription">
+                        <h1>Event Volenteer Managment</h1>
+                        <p>Hosting a successful event is not as asking people to help, it’s about managing them once they arrive. We provide the vital information at your finger tips so you can stop worrying about checking people in and start worry about hosting a successful event.</p>
+                        
+                    </div>
+                </div>
+
+                <div class="column half">
+                    <div id="LoginModel">
+                        <h1>Sign In</h1>
+                        <p>Email</p>
+                        <input>
+                        <p>Password</p>
+                        <input>
+                        <p><u>Forgot Password</u></p>
+                        <a href="mailto:TM-099-TenderleSupport@compucom.com?Subject=Hello%20again" target="_top"><div class="button bluebutton">Contact Us</div></a>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+
+
+        <div class="site-footer">
+            <p style="text-align:center">(C) 2007 - 2014 CompuCom Systems Inc. All Rights Reserved. Terms & Conditions</p>
+        </div>
+
+
+
+
+
+
+
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    </body>
+</html>
