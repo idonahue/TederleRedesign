@@ -43,10 +43,19 @@
                 #ContentContainer .container {
                     padding-bottom: 0px;
                 }
-            #TenderleHeader h1 {
-                text-align: center;
-                color: red;
+            .herosection {
+                background-image: url("img/tenderlebackgroundimage.jpg");
+                background-repeat: no-repeat;
             }
+            #TenderleHeader {
+
+            }
+                #TenderleHeader h1 {
+                    color: #333333;
+                    font-weight: 400;
+                    text-align: left;
+                    font-size: 24px;
+                }
             .column {
                 padding-left: 1rem;
                 padding-right: 1rem;
@@ -85,15 +94,6 @@
                   max-width: 48rem;
                   padding: 20px 0 65px 0;
             }
-            #TenderleHeader {
-
-            }
-                #TenderleHeader h1 {
-                    font-weight: 400;
-                    -moz-box-shadow:    3px 3px 5px 6px #ccc;
-                    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-                    box-shadow:         3px 3px 5px 6px #ccc;
-                }
             #TenderleLogo {
                 
             }
@@ -108,7 +108,7 @@
             }
                 #TenderleDescription h1 {
                     font-weight: 400;
-                    font-size: 24px;
+                    font-size: 58px;
                     text-align: center;
                 }
                 #TenderleDescription p {
@@ -174,7 +174,9 @@
                 }
 
 
-
+            .individualevent {
+                border: 1px solid #333333;
+            }
 
 
 
@@ -209,16 +211,12 @@
                     padding-bottom: 65px;
                 }
                 #TenderleDescription {
-                    max-width: 475px;
                 }
                     #TenderleDescription h1 {
                         font-weight: 300;
-                        text-align: left;
-
                     }
                     #TenderleDescription p {                    
                         text-align: left;
-
                     }
                 #TenderleLogo img {
                     width: 230px;
@@ -234,8 +232,6 @@
             @media (min-width: 700px) { 
                 #TenderleDescription h1 {
                     font-weight: 300;
-                    font-size: 30px;
-                    text-align: left;
                 } 
             }
 
@@ -313,37 +309,60 @@
 
 
             <div class="row clearfix">
-                    <div id="TenderleHeader" class="column full">
-                        <div id="TenderleHeader">
-                            <img src="img/CompuComLogo.png">
-                        </div>
-                    </div>  
-                </div>
+                <div id="TenderleHeader" class="column full">
+                    <div id="TenderleHeader">
+                        <h1>My Event Scherpa</h1>
+                    </div>
+                </div>  
+            </div> <!-- END -->
 
             <div id="ContentContainer">
 
-                
-                <div class="column half">
+                <div class="herosection column full">
                     <div id="TenderleDescription">
-                        <h1>Event Volenteer Managment</h1>
-                        <p>Hosting a successful event is not as asking people to help, it’s about managing them once they arrive. We provide the vital information at your finger tips so you can stop worrying about checking people in and start worry about hosting a successful event.</p>
+                        <h1>So, you want  to do great things, we do too.</h1>                        
+                    </div>
+                </div>
+            </div> <!-- END ContentContainer -->
+
+            <div id="EventsNeedHelp">
+                <h1>Events that still need help</h1>
+                
+                <div class="row clearfix">
+
+                    <div class="individualevent column third">
+                        <img src="img/eventimage.jpg">
+                        <div class="eventtitle">Growing in the City: The Mountair Park Community Farm</div>
+                        <div class="eventorganizer">By Festivals Unlimited LLC</div>
+                        <div class="eventdate">September 10, 2014</div>
+                        <div class="eventlocation">Duke Engergy Convention Center</div>
+                        <p class="eventdescription">Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met... </p>
                         
-                    </div>
-                </div>
+                    </div> <!-- END individualevent -->
 
-                <div class="column half">
-                    <div id="LoginModel">
-                        <h1>Sign In</h1>
-                        <p>Email</p>
-                        <input>
-                        <p>Password</p>
-                        <input>
-                        <p><u>Forgot Password</u></p>
-                        <a href="mailto:TM-099-TenderleSupport@compucom.com?Subject=Hello%20again" target="_top"><div class="button bluebutton">Contact Us</div></a>
-                    </div>
-                </div>
+                    <div class="individualevent column third">
+                        <img src="img/eventimage.jpg">
+                        <div class="eventtitle">Cincy Winter Beerfest</div>
+                        <div class="eventorganizer">By Festivals Unlimited LLC</div>
+                        <div class="eventdate">September 10, 2014</div>
+                        <div class="eventlocation">Duke Engergy Convention Center</div>
+                        <p class="eventdescription">Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met... </p>
+                        
+                    </div> <!-- END individualevent -->
 
-            </div>
+                    <div class="individualevent column third">
+                        <img src="img/eventimage.jpg">
+                        <div class="eventtitle">2013 Northside Rock N’ Roll Carnival</div>
+                        <div class="eventorganizer">By Festivals Unlimited LLC</div>
+                        <div class="eventdate">September 10, 2014</div>
+                        <div class="eventlocation">Duke Engergy Convention Center</div>
+                        <p class="eventdescription">Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met... </p>
+                        
+                    </div> <!-- END individualevent -->
+
+                </div>
+            
+            </div> <!-- END EventsNeedHelp -->
             
         </div>
 
