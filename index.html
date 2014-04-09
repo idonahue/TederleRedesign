@@ -21,168 +21,47 @@
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
 
         <style>
-            /* Small screens (default) */
-            html { font-size: 100%; }
-            html, body {
-                height: 100%;
-                
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
-            }
-            #Body
-            #BodyContainer {
-                
-            }
+            body {margin: 0;}
+
+            /* PAGE SETTINGS */
             #ContentContainer {
-                max-width: 1000px;
-                margin: 0 auto;
-                padding-top: 60px;
+                max-width: 1024px;
+                margin: 0 auto 0 auto;
             }
-                #ContentContainer .container {
-                    padding-bottom: 0px;
-                }
-            .herosection {
-                background-image: url("img/tenderlebackgroundimage.jpg");
-                background-repeat: no-repeat;
-            }
-            #TenderleHeader {
-
-            }
-                #TenderleHeader h1 {
-                    color: #333333;
-                    font-weight: 400;
-                    text-align: left;
-                    font-size: 24px;
-                }
-            .column {
-                padding-left: 1rem;
-                padding-right: 1rem;
-            }
-            
-            .page-wrap {
-                min-height: 100%;
-                /* equal to footer height */
-                margin-bottom: -60px; 
-            }
-            .page-wrap:after {
-                content: "";
-                display: block;
-            }
-            .site-footer, .page-wrap:after {
-            /* .push must be the same height as footer */
-                height: 60px; 
-            }
-            .site-footer {
-                background-color: #333333;
-                color: white;
-                font-size: 12px;
-                padding-top: 10px;
-                padding-left: 5%;
-                padding-right: 5%;
-            }
-            #TenderleHeader {
-                padding-top: 0px;
-                background-color: #f0f2f4;
-            }
-                #TenderleHeader img {
-                    width: 100px;
-                }
-            .container {
-                  margin: 0 auto;
-                  max-width: 48rem;
-                  padding: 20px 0 65px 0;
-            }
-            #TenderleLogo {
-                
-            }
-                #TenderleLogo img {
-                    width: 100px;
-                    display: table;
-                    margin: 50px auto 0 auto;
-                }
-            #TenderleDescription {
-                
+            #TenderleHeader h1 {
+                font-size: 18px;
                 color: #333333;
-            }
-                #TenderleDescription h1 {
-                    font-weight: 400;
-                    font-size: 58px;
-                    text-align: center;
-                }
-                #TenderleDescription p {
-                    font-weight: 400;
-                    text-align: center;
-                }
-            #TextWrapper {
-                background: white;
-            }
-            #CopyContainer {
-                color: #333333;
-                background: white;
-
-            }
-            .blueButton {
-                background: blue;
-                color: white;
-                padding: 10px 20px 10px 20px;
-                border-radius: 3px;
-            }
-            .shadow {
-                -moz-text-shadow:    0px 0px 5px #000;
-                -webkit-text-shadow: 0px 0px 5px #000;
-                text-shadow:         0px 0px 5px #000;
+                padding: 5px 0px 0px 10px;
             }
 
-            .button {
-                padding: 10px 20px 10px 20px;
-                background: blue;
-                color: white;
+            /* HERO SECTION */
+            #Herosection {
+                background-image: url("img/teaser_background_image.jpg");
+                height: 575px;
+            }
+            #TenderleDescription h1 {
                 text-align: center;
-                border-radius: 3px;
-                margin-bottom: 30px;
-                margin-right: auto;
-                margin-left: auto;
+                font-size: 58px;
+                font-weight: 300;
+                color: white;
+                padding-top: 200px;
+                padding-bottom: 30px;
+            }
+            #quicklaunch {
+                max-width: 400px;
+                margin: 0 auto 0 auto;
             }
             .button_orange {
-                background-color: #F88032;
-                color:white;
-                text-align: center;
-                border-radius: 3px;
-                padding: 5px 10px 5px 10px;
-                margin: 5px 10px 5px 10px;
-
-            }
-            .bluebutton {
-                background: #608bf7;
-            }
-            a {
-                text-decoration: none;
                 color: white;
+                background-color: orange;
+                text-align: center;
+                padding: 10px 10px 10px 10px;
+                border-radius: 3px;
             }
 
-            #LoginModel {
-                background-color: #f6f6f6;
-                padding: 25px;
-                -moz-box-shadow:    3px 3px 3px 3px #ccc;
-                -webkit-box-shadow: 3px 3px 3px 3px #ccc;
-                box-shadow:         3px 3px 3px 3px #ccc;
-            }
-                #LoginModel p {
-                    font-size: 14px;
-                }
-                #LoginModel input {
-                    font-size: 14px;
-                    width: 100%;
-                }
-                #LoginModel .button {
-                    background-color: #ff8130;
-                    font-size: 14px;
-                    font-weight: 600;
-                }
 
-            #EventsNeedHelp .individualevent {
+            /* EVENT SECTION */
+             #EventsNeedHelp .individualevent {
                 max-width: ;
             }
             #EventsPopular .individualevent {
@@ -192,7 +71,19 @@
                 border: 1px solid #cccccc;
                 border-radius: 8px;
                 margin-left:10px;
+                height: 315px;
             }
+            .eventleft {
+                float:left;
+                margin: 20px 0px 0px 20px;
+            }
+            .eventright {
+                margin: 40px 10px 0px 390px;
+         
+            }
+                .eventimage {
+
+                }
                 .eventtitle{
                     font-size: 20px;
                     font-weight: 400;
@@ -204,6 +95,7 @@
                     font-weight: 500;
                 }
                 .eventdate{
+                    padding:10px 0 10px 0;
                     font-size: 14px;
                     color: #666666;
                 }
@@ -215,113 +107,20 @@
                     font-size :14px;
                     color: #999999;
                 }
-
-
-
-
-            /*-------------   RESPONSIVE CSS   ------------*/
-
-            @media (min-width: 370px) { 
-                .button {
-                    max-width: 300px;
-
-                }
+            .button_volunteer {
+                color: white;
+                background-color: orange;
+                padding: 5px 10px 5px 10px;
+                text-align: center;
+                max-width: 200px;
             }
 
-
-        
-            /* Medium screens (640px) */
-            
-            @media (min-width: 40rem) { 
-                html { font-size: 107%; }
-                .column {
-                    padding-left: 1rem;
-                    padding-right: 1rem;
-                }
-                #TenderleHeader {
-                    
-                }
-                    #TenderleHeader img {
-                        width: 165px;
-                    }
-                #ContentContainer {
-                    height: 500px;
-                    max-width: 900px;                    
-                    padding-bottom: 65px;
-                }
-                #TenderleDescription {
-                }
-                    #TenderleDescription h1 {
-                        font-weight: 300;
-                    }
-                    #TenderleDescription p {                    
-                        text-align: left;
-                    }
-                #TenderleLogo img {
-                    width: 230px;
-                }
-                .button {
-                    max-width: 300px;
-                    margin-top: 70px;
-                    margin-right: 0;
-                    margin-left: 0;
-                }
+            /*FOOTER SECTION */
+            .site-footer {
+                background-color: #333333;
+                color: white;
             }
-
-            @media (min-width: 700px) { 
-                #TenderleDescription h1 {
-                    font-weight: 300;
-                } 
-            }
-
-
-            @media (min-width: 475px) { 
-                #TenderleLogo {
-                    
-                }
-                    #TenderleLogo img {
-                        width: 150px;
-                    }   
-                .button {
-                    margin-top: 50px;
-                }
-            }
-
-
-            @media (min-width: 55rem) {
-                #TenderleLogo img {
-                    width: 250px;
-                }
-            }
-        
-            /* Large screens (1024px) */
-            @media (min-width: 64rem) { 
-                html { font-size: 112%; }
-                #TenderleLogo img {
-                    width: 250px;
-                }
-
-                
-            }
-
-            @media (min-width: 40rem) {
-                .column {
-                    float: left;
-                    padding-left: 1rem;
-                    padding-right: 1rem;
-                }
-
-                .column.full { width: 100%; }
-                .column.two-thirds { width: 66.7%; }
-                .column.half { width: 50%; }
-                .column.third { width: 33.3%; }
-                .column.fourth { width: 24.95%; }
-                .column.flow-opposite { float: right; }  
-            }  
-
-            @media (min-width: 40rem) {
-                .column.flow-opposite { float: right; }
-            }
+          
         </style>
         
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -345,121 +144,83 @@
 
         <!-- Add your site or application content here -->
         <div id="BodyContainer" class="page-wrap">
+            <div id="TenderleHeader" class="column full">
+                <div id="TenderleHeader">
+                    <h1>My Event Scherpa</h1>
+                </div>
+            </div>  
+        </div> <!-- END -->
 
 
-            <div class="row clearfix">
-                <div id="TenderleHeader" class="column full">
-                    <div id="TenderleHeader">
-                        <h1>My Event Scherpa</h1>
-                    </div>
-                </div>  
-            </div> <!-- END -->
+            <div id="Herosection">
+                <div id="TenderleDescription">
+                    <h1>So, you want  to do great things, we do too.</h1>                        
+                </div>
+                <div id="quicklaunch">
+                    <div class="button_orange">Find Event</div>
+                </div>
+            </div>
 
             <div id="ContentContainer">
 
-                <div class="herosection column full">
-                    <div id="TenderleDescription">
-                        <h1>So, you want  to do great things, we do too.</h1>                        
-                    </div>
-                    <div class="quicklaunch">
-                        <div class="button_orange">Find Event</div>
-                        <div class="button_orange">Create</div>
-                        <div class="button_orange">Sponsor an Event</div>
-                    </div>
-                </div>
-            </div> <!-- END ContentContainer -->
+            
 
             <div id="EventsNeedHelp">
                 <h1>Events that still need help</h1>
                 
-                <div class="row clearfix">
+                <div class="">
 
-                    <div class="individualevent column third">
-                        <img src="img/eventimage.jpg">
-                        <div class="eventtitle">Growing in the City: The Mountair Park Community Farm</div>
-                        <div class="eventorganizer">By Festivals Unlimited LLC</div>
-                        <div class="eventdate">September 10, 2014</div>
-                        <div class="eventlocation">Duke Engergy Convention Center</div>
-                        <p class="eventdescription">Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met... </p>
-                        
-                    </div> <!-- END individualevent -->
-
-                    <div class="individualevent column third">
-                        <img src="img/eventimage.jpg">
-                        <div class="eventtitle">Cincy Winter Beerfest</div>
-                        <div class="eventorganizer">By Festivals Unlimited LLC</div>
-                        <div class="eventdate">September 10, 2014</div>
-                        <div class="eventlocation">Duke Engergy Convention Center</div>
-                        <p class="eventdescription">Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met... </p>
-                        
-                    </div> <!-- END individualevent -->
-
-                    <div class="individualevent column third">
-                        <img src="img/eventimage.jpg">
-                        <div class="eventtitle">2013 Northside Rock N’ Roll Carnival</div>
-                        <div class="eventorganizer">By Festivals Unlimited LLC</div>
-                        <div class="eventdate">September 10, 2014</div>
-                        <div class="eventlocation">Duke Engergy Convention Center</div>
-                        <p class="eventdescription">Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met... </p>
-                        
+                    <div class="individualevent">
+                        <div class="eventleft">
+                            <img class="eventimage" src="img/eventimage.jpg">
+                        </div>
+                        <div class="eventright">
+                            <div class="eventtitle">Growing in the City: The Mountair Park Community Farm</div>
+                            <div class="eventorganizer">By Festivals Unlimited LLC</div>
+                            <div class="eventdate">September 10, 2014</div>
+                            <div class="eventlocation">Duke Engergy Convention Center</div>
+                            <p class="eventdescription">Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met... </p>
+                            <div class="button_volunteer">Volunteer</div>
+                        </div>
                     </div> <!-- END individualevent -->
 
                 </div> <!-- END row/clearfix -->
             
             </div> <!-- END EventsNeedHelp -->
 
-            <div id="EventsPopular">
-                <h1>Popular</h1>
-                
-                <div class="row clearfix">
-
-                    <div class="individualevent column fourth">
-                        <img src="img/eventimage.jpg">
-                        <div class="eventtitle">Growing in the City: The Mountair Park Community Farm</div>
-                        <div class="eventorganizer">By Festivals Unlimited LLC</div>
-                        <div class="eventdate">September 10, 2014</div>
-                        <div class="eventlocation">Duke Engergy Convention Center</div>
-                        <p class="eventdescription">Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met... </p>
-                        
-                    </div> <!-- END individualevent -->
-
-                    <div class="individualevent column fourth">
-                        <img src="img/eventimage.jpg">
-                        <div class="eventtitle">Cincy Winter Beerfest</div>
-                        <div class="eventorganizer">By Festivals Unlimited LLC</div>
-                        <div class="eventdate">September 10, 2014</div>
-                        <div class="eventlocation">Duke Engergy Convention Center</div>
-                        <p class="eventdescription">Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met... </p>
-                        
-                    </div> <!-- END individualevent -->
-
-                    <div class="individualevent column fourth">
-                        <img src="img/eventimage.jpg">
-                        <div class="eventtitle">2013 Northside Rock N’ Roll Carnival</div>
-                        <div class="eventorganizer">By Festivals Unlimited LLC</div>
-                        <div class="eventdate">September 10, 2014</div>
-                        <div class="eventlocation">Duke Engergy Convention Center</div>
-                        <p class="eventdescription">Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met... </p>
-                        
-                    </div> <!-- END individualevent -->
-
-                    <div class="individualevent column fourth">
-                        <img src="img/eventimage.jpg">
-                        <div class="eventtitle">2013 Northside Rock N’ Roll Carnival</div>
-                        <div class="eventorganizer">By Festivals Unlimited LLC</div>
-                        <div class="eventdate">September 10, 2014</div>
-                        <div class="eventlocation">Duke Engergy Convention Center</div>
-                        <p class="eventdescription">Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met... </p>
-                        
-                    </div> <!-- END individualevent -->
-
-                </div> <!-- END row/clearfix -->
-            
-        </div> <!-- END EventsPopular -->
+        </div> <!-- END ContentContainer -->
 
 
         <div class="site-footer">
+            <div class="content-footer">
+                <div class="column_third">
+                    <h5>About Us</h5>
+                    <ul>
+                        <li>Who we are</li>
+                        <li>Jobs</li>
+                        <li>Press</li>
+                    </ul>
+                </div>
+               <div class="column_third">
+                    <h5>Help</h5>
+                    <ul>
+                        <li>What is MyEventScherpa</li>
+                        <li>FAQ</li>
+                        <li>Support</li>
+                        <li>Terms & Privacy</li>
+                    </ul>
+                </div>
+               <div class="column_third">
+                    <h5>Help</h5>
+                    <ul>
+                        <li>Twitter</li>
+                        <li>Facebook</li>
+                        <li>Blog</li>
+                    </ul>
+                </div>
+            </div>
             <p style="text-align:center">(C) 2007 - 2014 Tenderle Foundation LLC. All Rights Reserved. Terms & Conditions</p>
+
         </div>
 
 

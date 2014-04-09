@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    
+
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tenderle</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+
+        <style>
+            html, body {
+                height: 100%;
+                
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+            #Body
+            #BodyContainer {
+                
+            }
+            #ContentContainer {
+                max-width: 1000px;
+                margin: 0 auto;
+                padding-top: 60px;
+            }
+                #ContentContainer .container {
+                    padding-bottom: 0px;
+                }
+            .herosection {
+                background-image: url("img/tenderlebackgroundimage.jpg");
+                background-repeat: no-repeat;
+            }
+            #TenderleHeader {
+
+            }
+                #TenderleHeader h1 {
+                    color: #333333;
+                    font-weight: 400;
+                    text-align: left;
+                    font-size: 24px;
+                }
+            .column {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+            
+            .page-wrap {
+                min-height: 100%;
+                /* equal to footer height */
+                margin-bottom: -60px; 
+            }
+            .page-wrap:after {
+                content: "";
+                display: block;
+            }
+            .site-footer, .page-wrap:after {
+            /* .push must be the same height as footer */
+                height: 60px; 
+            }
+            .site-footer {
+                background-color: #333333;
+                color: white;
+                font-size: 12px;
+                padding-top: 10px;
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+            #TenderleHeader {
+                padding-top: 0px;
+                background-color: #f0f2f4;
+            }
+                #TenderleHeader img {
+                    width: 100px;
+                }
+            .container {
+                  margin: 0 auto;
+                  max-width: 48rem;
+                  padding: 20px 0 65px 0;
+            }
+            #TenderleLogo {
+                
+            }
+                #TenderleLogo img {
+                    width: 100px;
+                    display: table;
+                    margin: 50px auto 0 auto;
+                }
+            #TenderleDescription {
+                
+                color: #333333;
+            }
+                #TenderleDescription h1 {
+                    font-weight: 400;
+                    font-size: 58px;
+                    text-align: center;
+                }
+                #TenderleDescription p {
+                    font-weight: 400;
+                    text-align: center;
+                }
+            #TextWrapper {
+                background: white;
+            }
+            #CopyContainer {
+                color: #333333;
+                background: white;
+
+            }
+            .blueButton {
+                background: blue;
+                color: white;
+                padding: 10px 20px 10px 20px;
+                border-radius: 3px;
+            }
+            .shadow {
+                -moz-text-shadow:    0px 0px 5px #000;
+                -webkit-text-shadow: 0px 0px 5px #000;
+                text-shadow:         0px 0px 5px #000;
+            }
+
+            .button {
+                padding: 10px 20px 10px 20px;
+                background: blue;
+                color: white;
+                text-align: center;
+                border-radius: 3px;
+                margin-bottom: 30px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            .button_orange {
+                background-color: #F88032;
+                color:white;
+                text-align: center;
+                border-radius: 3px;
+                padding: 5px 10px 5px 10px;
+                margin: 5px 10px 5px 10px;
+
+            }
+            .bluebutton {
+                background: #608bf7;
+            }
+            a {
+                text-decoration: none;
+                color: white;
+            }
+
+            #LoginModel {
+                background-color: #f6f6f6;
+                padding: 25px;
+                -moz-box-shadow:    3px 3px 3px 3px #ccc;
+                -webkit-box-shadow: 3px 3px 3px 3px #ccc;
+                box-shadow:         3px 3px 3px 3px #ccc;
+            }
+                #LoginModel p {
+                    font-size: 14px;
+                }
+                #LoginModel input {
+                    font-size: 14px;
+                    width: 100%;
+                }
+                #LoginModel .button {
+                    background-color: #ff8130;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+
+            #EventsNeedHelp .individualevent {
+                max-width: ;
+            }
+            #EventsPopular .individualevent {
+                max-width:;
+            }
+            .individualevent {
+                border: 1px solid #cccccc;
+                border-radius: 8px;
+                margin-left:10px;
+            }
+                .eventtitle{
+                    font-size: 20px;
+                    font-weight: 400;
+                    color: #00A3D8;
+                }
+                .eventorganizer{
+                    font-size: 15px;
+                    color: #333333;
+                    font-weight: 500;
+                }
+                .eventdate{
+                    font-size: 14px;
+                    color: #666666;
+                }
+                .eventlocation{
+                    font-size: 14px;
+                    color: #666666;
+                }
+                .eventdescription {
+                    font-size :14px;
+                    color: #999999;
+                }
+
+
+
+
+
+
+
+        </style>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" media="all" href="css/styles-ie.css"/>
+        <![endif]-->
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" media="all" href="css/styles-ie.css"/>
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <link rel="stylesheet" type="text/css" media="all" href="css/styles-ie.css"/>
+        <![endif]-->
+
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div id="BodyContainer" class="page-wrap">
+
+
+            <div class="row clearfix">
+                <div id="TenderleHeader" class="column full">
+                    <div id="TenderleHeader">
+                        <h1>My Event Scherpa</h1>
+                    </div>
+                </div>  
+            </div> <!-- END -->
+
+            <div id="ContentContainer">
+
+                <div class="herosection column full">
+                    <div id="TenderleDescription">
+                        <h1>So, you want  to do great things, we do too.</h1>                        
+                    </div>
+                    <div class="quicklaunch">
+                        <div class="button_orange">Find Event</div>
+                        <div class="button_orange">Create</div>
+                        <div class="button_orange">Sponsor an Event</div>
+                    </div>
+                </div>
+            </div> <!-- END ContentContainer -->
+
+            <div id="EventsNeedHelp">
+                <h1>Events that still need help</h1>
+                
+                <div class="row clearfix">
+
+                    <div class="individualevent column third">
+                        <img src="img/eventimage.jpg">
+                        <div class="eventtitle">Growing in the City: The Mountair Park Community Farm</div>
+                        <div class="eventorganizer">By Festivals Unlimited LLC</div>
+                        <div class="eventdate">September 10, 2014</div>
+                        <div class="eventlocation">Duke Engergy Convention Center</div>
+                        <p class="eventdescription">Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met... </p>
+                        
+                    </div> <!-- END individualevent -->
+
+                    <div class="individualevent column third">
+                        <img src="img/eventimage.jpg">
+                        <div class="eventtitle">Cincy Winter Beerfest</div>
+                        <div class="eventorganizer">By Festivals Unlimited LLC</div>
+                        <div class="eventdate">September 10, 2014</div>
+                        <div class="eventlocation">Duke Engergy Convention Center</div>
+                        <p class="eventdescription">Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met... </p>
+                        
+                    </div> <!-- END individualevent -->
+
+                    <div class="individualevent column third">
+                        <img src="img/eventimage.jpg">
+                        <div class="eventtitle">2013 Northside Rock N’ Roll Carnival</div>
+                        <div class="eventorganizer">By Festivals Unlimited LLC</div>
+                        <div class="eventdate">September 10, 2014</div>
+                        <div class="eventlocation">Duke Engergy Convention Center</div>
+                        <p class="eventdescription">Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met... </p>
+                        
+                    </div> <!-- END individualevent -->
+
+                </div> <!-- END row/clearfix -->
+            
+            </div> <!-- END EventsNeedHelp -->
+
+            <div id="EventsPopular">
+                <h1>Popular</h1>
+                
+                <div class="row clearfix">
+
+                    <div class="individualevent column fourth">
+                        <img src="img/eventimage.jpg">
+                        <div class="eventtitle">Growing in the City: The Mountair Park Community Farm</div>
+                        <div class="eventorganizer">By Festivals Unlimited LLC</div>
+                        <div class="eventdate">September 10, 2014</div>
+                        <div class="eventlocation">Duke Engergy Convention Center</div>
+                        <p class="eventdescription">Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met... </p>
+                        
+                    </div> <!-- END individualevent -->
+
+                    <div class="individualevent column fourth">
+                        <img src="img/eventimage.jpg">
+                        <div class="eventtitle">Cincy Winter Beerfest</div>
+                        <div class="eventorganizer">By Festivals Unlimited LLC</div>
+                        <div class="eventdate">September 10, 2014</div>
+                        <div class="eventlocation">Duke Engergy Convention Center</div>
+                        <p class="eventdescription">Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met... </p>
+                        
+                    </div> <!-- END individualevent -->
+
+                    <div class="individualevent column fourth">
+                        <img src="img/eventimage.jpg">
+                        <div class="eventtitle">2013 Northside Rock N’ Roll Carnival</div>
+                        <div class="eventorganizer">By Festivals Unlimited LLC</div>
+                        <div class="eventdate">September 10, 2014</div>
+                        <div class="eventlocation">Duke Engergy Convention Center</div>
+                        <p class="eventdescription">Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met... </p>
+                        
+                    </div> <!-- END individualevent -->
+
+                    <div class="individualevent column fourth">
+                        <img src="img/eventimage.jpg">
+                        <div class="eventtitle">2013 Northside Rock N’ Roll Carnival</div>
+                        <div class="eventorganizer">By Festivals Unlimited LLC</div>
+                        <div class="eventdate">September 10, 2014</div>
+                        <div class="eventlocation">Duke Engergy Convention Center</div>
+                        <p class="eventdescription">Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met. Lorem ipusom dor sit al met... </p>
+                        
+                    </div> <!-- END individualevent -->
+
+                </div> <!-- END row/clearfix -->
+            
+        </div> <!-- END EventsPopular -->
+
+
+        <div class="site-footer">
+            <p style="text-align:center">(C) 2007 - 2014 Tenderle Foundation LLC. All Rights Reserved. Terms & Conditions</p>
+        </div>
+
+
+
+
+
+
+
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    </body>
+</html>
