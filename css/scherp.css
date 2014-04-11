@@ -1,168 +1,212 @@
 body {margin: 0;}
+    /*hell0*/
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+    }
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
 
-            .clearfix:after {
-                visibility: hidden;
-                display: block;
-                font-size: 0;
-                content: " ";
-                clear: both;
-                height: 0;
-                }
-            * html .clearfix             { zoom: 1; } /* IE6 */
-            *:first-child+html .clearfix { zoom: 1; } /* IE7 */
+/* PAGE SETTINGS */
+#BodyContainer {
+    height: 25px;
+}
+#ContentContainer {
+    max-width: 1024px;
+    margin: 0 auto 0 auto;
+}
+#TenderleHeader h1 {
+    font-size: 18px;
+    color: #333333;
+    padding: 5px 0px 0px 10px;
+    width: 300px;
+    float:left;
+}
+.Signupbutton{
+    border:1px solid red;
+    padding: 10px;
+    text-align: center;
+    float:right;
+}
+.Registerbutton{
+    border:1px solid red;
+    padding: 10px;
+    text-align: center;
+    float:right;
+}
 
-            /* PAGE SETTINGS */
-            #BodyContainer {
-                height: 20px;
-            }
-            #ContentContainer {
-                max-width: 1024px;
-                margin: 0 auto 0 auto;
-            }
-            #TenderleHeader h1 {
-                font-size: 18px;
-                color: #333333;
-                padding: 5px 0px 0px 10px;
-                width: 300px;
-                float:left;
-            }
-            .Signupbutton{
-                border:1px solid red;
-                padding: 10px;
-                text-align: center;
-                float:right;
-            }
-            .Registerbutton{
-                border:1px solid red;
-                padding: 10px;
-                text-align: center;
-                float:right;
-            }
+/* HERO SECTION */
+#Herosection {
+    background-image: url("../img/teaser_background_image.jpg");
+    height: 575px;
+}
+#TenderleDescription h1 {
+    text-align: center;
+    font-size: 58px;
+    font-weight: 300;
+    color: white;
+    padding-top: 200px;
+    padding-bottom: 30px;
+}
+#quicklaunch {
+    max-width: 400px;
+    margin: 0 auto 0 auto;
+}
+.button {
+    color: white;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    border-radius: 3px;
 
-            /* HERO SECTION */
-            #Herosection {
-                background-image: url("../img/teaser_background_image.jpg");
-                height: 575px;
-            }
-            #TenderleDescription h1 {
-                text-align: center;
-                font-size: 58px;
-                font-weight: 300;
-                color: white;
-                padding-top: 200px;
-                padding-bottom: 30px;
-            }
-            #quicklaunch {
-                max-width: 400px;
-                margin: 0 auto 0 auto;
-            }
-            .button_orange {
-                color: white;
-                background-color: orange;
-                text-align: center;
-                padding: 10px 10px 10px 10px;
-                border-radius: 3px;
-            }
+}
+.button_orange {
+    background-color: orange;
+}
 
 
-            /* EVENT SECTION */
-            #EventsNeedHelp {
-                margin-top: 50px;
-                margin-bottom: 100px;
-            }
-            #EventsNeedHelp .individualevent {
-                max-width: ;
-            }
-            #EventsNeedHelp h1 {
-                margin-bottom: 50px;
-                font-size: 24px;
-            }
-            #EventsPopular .individualevent {
-                max-width:;
-            }
-            .individualevent {
-                border: 1px solid #cccccc;
-                border-radius: 8px;
-                margin-left:10px;
-                height: 315px;
-                margin-bottom: 50px;
-            }
-            .eventleft {
-                float:left;
-                margin: 20px 0px 0px 20px;
-            }
-            .eventright {
-                margin: 40px 10px 0px 390px;
-         
-            }
-                .eventimage {
+/* EVENT SECTION */
+#EventsNeedHelp {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+#EventsNeedHelp .individualevent {
+    max-width: ;
+}
+#EventsNeedHelp h1 {
+    margin-bottom: 50px;
+    font-size: 24px;
+}
+#EventsPopular .individualevent {
+    max-width:;
+}
+.individualevent {
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    margin-left:10px;
+    height: 315px;
+    margin-bottom: 50px;
+}
+.eventleft {
+    float:left;
+    margin: 20px 0px 0px 20px;
+}
+.eventright {
+    margin: 40px 10px 0px 390px;
 
-                }
-                .eventtitle{
-                    font-size: 20px;
-                    font-weight: 400;
-                    color: #00A3D8;
-                }
-                .eventorganizer{
-                    font-size: 15px;
-                    color: #333333;
-                    font-weight: 500;
-                }
-                .eventdate{
-                    padding:10px 0 10px 0;
-                    font-size: 14px;
-                    color: #666666;
-                }
-                .eventlocation{
-                    font-size: 14px;
-                    color: #666666;
-                }
-                .eventdescription {
-                    font-size :14px;
-                    color: #999999;
-                    margin-bottom: 30px;
-                }
-            .button_volunteer {
-                color: white;
-                background-color: orange;
-                padding: 5px 10px 5px 10px;
-                text-align: center;
-                max-width: 200px;
-            }
+}
+    .eventimage {
 
-            /*FOOTER SECTION */
-            .site-footer {
-                background-color: #333333;
-                color: white;
-                height: 200px;
-            }
-            .content-footer {
-                max-width: 1024px;
-                margin: 0 auto 0 auto;
-            }
-            .column_third {
-                width: 33%;
-                float: right;
-                padding-bottom: 30px;
-                
-            }
-                .column_third h5 {
-                    font-weight: bold;
-                }
-                .column_third ul {
-                    list-style:none;
-                    padding-left:0;
-                }
-                    .column_third ul li {
-                        list-style-image: none;
-                        list-style-position: outside;
-                        list-style-type: none;
-                        display: list-item;
-                        padding: 0;
-                        font-size: 14px;
-                        color: #d0d5cb;
-                    }
-            .copywrite {
-                max-width: 1024px;
-                font-size: 12px;
-            }
+    }
+    .eventtitle{
+        font-size: 20px;
+        font-weight: 400;
+        color: #00A3D8;
+    }
+    .eventorganizer{
+        font-size: 15px;
+        color: #333333;
+        font-weight: 500;
+    }
+    .eventdate{
+        padding:10px 0 10px 0;
+        font-size: 14px;
+        color: #666666;
+    }
+    .eventlocation{
+        font-size: 14px;
+        color: #666666;
+    }
+    .eventdescription {
+        font-size :14px;
+        color: #999999;
+        margin-bottom: 30px;
+    }
+.button_volunteer {
+    color: white;
+    background-color: orange;
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+    max-width: 200px;
+}
+
+/*FOOTER SECTION */
+.site-footer {
+    background-color: #333333;
+    color: white;
+    height: 200px;
+}
+.content-footer {
+    max-width: 1024px;
+    margin: 0 auto 0 auto;
+}
+.column_third {
+    width: 33%;
+    float: right;
+    padding-bottom: 30px;
+    
+}
+    .column_third h5 {
+        font-weight: bold;
+    }
+    .column_third ul {
+        list-style:none;
+        padding-left:0;
+    }
+        .column_third ul li {
+            list-style-image: none;
+            list-style-position: outside;
+            list-style-type: none;
+            display: list-item;
+            padding: 0;
+            font-size: 14px;
+            color: #d0d5cb;
+        }
+.copywrite {
+    max-width: 1024px;
+    font-size: 12px;
+}
+
+/* PAGE SPECIFIC */
+/* signup.html */
+.UserSignupModuel {
+    width: 30%;
+    margin: 0 auto 0 auto;
+}
+    .UserSignupModuel ul {
+        padding-left: 0px;
+    }
+li.Field { 
+   display: block; 
+   clear: both; 
+   padding: 10px 0 10px 0;
+   float:left;
+   height: 80px;
+   padding-left: 0px;
+}
+label, input {
+    display: block;
+}
+label {
+    font-size: 12px;
+    color: #666666;
+    padding-bottom: 5px;
+}
+input {
+    color: #333333;
+    border-radius: 3px;
+    box-shadow: none;
+}
+.LegalReview {
+    font-size: 12px;
+}
+.RegisterButton {
+    color: white;
+    background-color: orange;
+    text-align: center;
+    font-size: 14px;
+    padding-
+}
