@@ -37,8 +37,7 @@ body {
     font-size: 18px;
     color: #333333;
     padding: 5px 0px 0px 10px;
-    width: 300px;
-    float:left;
+    width: 300px; 
 }
 .Signupbutton{
     border:1px solid red;
@@ -65,14 +64,52 @@ body {
     background-image: url("../img/teaser_background_image.jpg");
     height: 575px;
 }
-#TenderleDescription h1 {
-    text-align: center;
-    font-size: 58px;
-    font-weight: 300;
-    color: white;
-    padding-top: 200px;
-    padding-bottom: 30px;
+#TenderleDescription {}
+    #TenderleDescription h1 {
+        text-align: center;
+        
+        font-weight: 300;
+        color: white;
+        padding-top: 200px;
+        padding-bottom: 30px;
+    }
+    #TenderleDescription h3 {
+        color: white;
+        margin: 0 auto 0 auto;
+        font-weight: 300;
+        text-align: center;
+    }
+.Absolute-Center {
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
 }
+.LaunchBox {
+    margin: 0 auto auto auto;
+    background-color: white;
+    border-radius: 3px;
+    width: 70%;
+    color: black;
+    margin-top: 40px;
+    height: 400px;
+}
+    .LaunchBox #TenderleHeader h1 {
+        width: 100%;
+        font-weight: bold;
+    }
+
+    #TenderleDescription .LaunchBox h1 {
+        color: #333333;
+        padding: 30px 30px 10px 30px;
+    }
+    #TenderleDescription .LaunchBox h3 {
+        color: #333333;
+        padding: 0px 30px 40px 30px;
+    }
+    .LaunchBox h1, .LaunchBox h3 {
+        color: #333333;
+
+    }
 #quicklaunch {
     max-width: 400px;
     margin: 0 auto 0 auto;
@@ -194,6 +231,27 @@ body {
     max-width: 1024px;
     font-size: 12px;
 }
+/* STICKY FOOTER */
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -142px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  /* .push must be the same height as footer */
+  height: 40px; 
+}
+
 
 /* PAGE SPECIFIC */
 /* signup.html */
