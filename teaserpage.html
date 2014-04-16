@@ -13,8 +13,6 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/scherp.css">
 
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
         
@@ -26,6 +24,7 @@
             }
             html, body {
               height: 100%;
+              font-family: sans-serif;
             }
             .page-wrap {
               min-height: 100%;
@@ -36,20 +35,70 @@
               content: "";
               display: block;
             }
+            #BodyContainer {
+                height: 100%;
+            }
 
             #Herosection {
                 background-image: url('img/teaser_background_image.jpg');
-                height: 95%;
+                height: 95.5%;
             }
 
+            #TenderleDescription {
+                background-color: white;
+                color: #333333;
+                border-radius: 3px;
+                max-width: 720px;
+                width: 60%;
+                margin: 0px auto auto auto;
+                padding: 30px;
+                top: 200px;
+                position:relative;
+                text-align: center;
+            }
+            #LaunchBox {
+                margin-top: 100px;
+            }
+            #TenderleHeader {
+                padding: 20px 0 30px 0;
+            }
             #TenderleHeader h1 {
-                font-size: 58px;
-                text-align: center;
+                font-weight: bold;
             }
-            #LaunchBox h1 {
-                font-size: 24px;
-                text-align: center;
 
+                #TenderleHeader h1 {
+                }
+            .LaunchBox h2 {
+                font-size: 48px;
+                text-align: center;
+                font-weight: bold;
+                padding-bottom: 40px;
+            }
+            .LaunchBox h4 {
+                font-weight: 300;
+                font-size: 24px;
+
+            }
+
+            .site-footer {
+                background-color: #333333;
+                height: 2.5%;
+                color: white;
+                text-align: center;
+                padding-top: 2%;
+            }
+            .EmailUs {
+
+                color: white;
+                background-color: orange;
+                max-width: 300px;
+                padding: 10px 20px 10px 20px;
+                margin: 60px auto 0px auto;
+                border-radius: 3px;
+
+            }
+            a {
+                text-decoration: none;
             }
 
         </style>
@@ -62,14 +111,16 @@
 
         <div id="BodyContainer" class="page-wrap" >
     
-            <div id="Herosection" >
+            <div id="Herosection">
                 <div id="TenderleDescription">
-                    <div class="LaunchBox Absolute-Center">
+                    <div class="LaunchBox">
                         <div id="TenderleHeader">
-                            <h1>My Event Sherpa</h1>
+                            <h2>My Event Sherpa</h2>
+                            <h3>Connecting charities and organizers with a network of volunteers</h3>
+                            <a href="mailto:info@tenderle.org?Subject=MyEventSherpa%20Information%20Requeset" target="_top"><div class="EmailUs">Email Us</div>
                         </div>
                        
-                        <h1>Connecting charities and organizers with a network of volunteers</h1>
+                        
                     </div>
                 </div>
             </div>
