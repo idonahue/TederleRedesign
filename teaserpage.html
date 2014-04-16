@@ -21,12 +21,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <style type="text/css">
+            * {
+              margin: 0;
+            }
+            html, body {
+              height: 100%;
+            }
+            .page-wrap {
+              min-height: 100%;
+              /* equal to footer height */
+              margin-bottom: -142px; 
+            }
+            .page-wrap:after {
+              content: "";
+              display: block;
+            }
+            .site-footer, .page-wrap:after {
+              /* .push must be the same height as footer */
+              height: 40px; 
+            }
+        
             #TenderleHeader h1 {
-                font-size: 30px;
-                text-align: left;
+                font-size: 58px;
+                text-align: center;
             }
             #LaunchBox h1 {
-                text-align: left;
+                font-size: 24px;
+                text-align: center;
+
             }
 
         </style>
@@ -45,8 +67,8 @@
                         <div id="TenderleHeader">
                             <h1>My Event Sherpa</h1>
                         </div>
-                        <h1>You want to do great things, so do we.</h1> 
-                        <h3>We are making volunteer managment easy as well as a reason for volunteers to come back.</h3>
+                       
+                        <h1>Connecting charities and organizers with a network of volunteers</h1>
                     </div>
                 </div>
             </div>
