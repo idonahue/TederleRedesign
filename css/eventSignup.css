@@ -1,0 +1,144 @@
+.clearfix {
+  display: table;
+}
+  .eventSignup {
+    font-family: sans-serif;
+    margin: 0px;
+    border: 1px solid #DDDDDD;
+    width: 1150px;
+    font-size: 14px;
+
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 20px 0px 0px 0px;
+  }
+  .p20 {
+    padding: 0px 20px 0 20px;
+  }
+  .bb1 {
+    border-bottom: 1px solid #DDDDDD;
+  }
+  .bl1 {
+    border-left: 1px solid #DDDDDD;
+  }
+  .highlight {
+    background-color: #F9FFF1;
+  }
+
+  .EventDetails {
+    color: #333333;
+    font-size: 15px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #DDDDDD;
+  }
+
+    .EventTitle {
+      font-size: 30px;
+      margin-bottom: 25px;
+    }
+    .EventPlanner {
+      font-weight: bold;
+      
+      padding-bottom: 20px;
+    }
+
+  .eventRegistrationContainer {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    height: 440px;
+  }
+
+
+  .UserLogin {
+    float: left;
+    width: 360px;
+  }
+    .UserLogin p {
+      padding-bottom: 25px;
+    }
+  .userInputModule {
+    padding-right: 20px;
+
+  }
+    .userInputModule .userInput {
+      margin: 0px 0px 30px 0px;
+    }
+    .userInputModule input {
+      width: 230px;
+      float: right;
+      clear: both;
+    }
+    label {
+      color: #B4886B;
+      font-weight: bold;
+      display: block;
+      width: 150px;
+      float: left;
+      }
+    label:after { content: ": " }
+    .labelTitle {
+      width: 130px;
+    }
+    .labelTitle {
+      font-size: 14px;
+    }
+
+
+
+  .availabilityModule {
+    float: right;
+  }
+    .availabilityModule p {
+      padding-bottom: 25px;
+    }
+
+
+  .availabilityTable {
+    border: 1px solid #DDDDDD;
+    padding: 0px;
+    float: left;
+    width: 675px;
+  }
+    .availabilityTable tr {
+      border-bottom: 1px solid #DDDDDD;
+    }
+    .availabilityTable td  {
+      padding: 10px;
+      margin: 0px;
+    }
+      .availabilityTable td .avalability {
+        border-left: 1px solid #DDDDDD;
+      }
+  .Day {
+    font-weight: bold;
+  }
+  .Time {
+    font-weight: bold;
+  }
+  .volunteerButtonContainer{
+    border-top: 1px solid #DDDDDD;
+    width: 100%;
+  }
+  .center {
+    margin: 0 auto;
+    width: 950px;
+  }
+    .volunteerButton {
+      background-color: orange;
+      color: white;
+      font-size: 16px;
+      padding: 10px 60px 10px 60px;
+      margin: 20px;
+      float: right;
+      cursor: pointer;
+    }
+
+    .reviewDetails {
+      float: left;
+      padding: 30px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #666666;
+    }
