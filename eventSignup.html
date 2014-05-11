@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+
+<style>
+.clearfix {
+  display: table;
+}
+  .eventSignup {
+    font-family: sans-serif;
+    margin: 0px;
+    border: 1px solid #DDDDDD;
+
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 20px 0px 20px 0px;
+  }
+  .p20 {
+    padding: 0px 20px 0 20px;
+  }
+  .bb1 {
+    border-bottom: 1px solid #DDDDDD;
+  }
+  .bl1 {
+    border-left: 1px solid #DDDDDD;
+  }
+  .highlight {
+    background-color: #F9FFF1;
+  }
+
+  .EventDetails {
+    color: #333333;
+    font-size: 15px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #DDDDDD;
+  }
+    .EventTitle {
+      font-size: 30px;
+      margin-bottom: 25px;
+    }
+    .EventPlanner {
+      font-weight: bold;
+      
+      padding-top: 20px;
+    }
+
+  .eventRegistrationContainer {
+    padding-bottom: 30px;
+  }
+
+
+  .UserLogin {
+    float: left;
+    width: 33%;
+  }
+    .UserLogin p {
+      padding-bottom: 25px;
+    }
+  .userInputModule {}
+    .userInputModule .userInput {
+      margin: 10px 0px 10px 0px;
+    }
+    .userInputModule input {
+      width: 230px;
+    }
+    label {
+      color: #B4886B;
+      font-weight: bold;
+      display: block;
+      width: 150px;
+      float: left;
+      }
+    label:after { content: ": " }
+    .labelTitle {
+      width: 130px;
+    }
+
+
+
+  .availabilityModule {
+    
+  }
+    .availabilityModule p {
+      padding-bottom: 25px;
+    }
+
+
+  .availabilityTable {
+    border: 1px solid #DDDDDD;
+    padding: 0px;
+    float: left;
+    width: 66%;
+  }
+    .availabilityTable tr {
+      border-bottom: 1px solid #DDDDDD;
+    }
+    .availabilityTable td  {
+      padding: 10px;
+      margin: 0px;
+    }
+      .availabilityTable td .avalability {
+        border-left: 1px solid #DDDDDD;
+      }
+  .Day {
+    font-weight: bold;
+  }
+  .Time {
+    font-weight: bold;
+  }
+  .volunteerButtonContainer{
+    border-top: 1px solid #DDDDDD;
+    width: 100%;
+  }
+    .volunteerButton {
+      background-color: orange;
+      color: white;
+      font-size: 16px;
+      padding: 10px 20px 10px 20px;
+      margin: 20px;
+      float: right;
+    }
+</style>
+
+</head>
+
+<body>
+
+<div class="eventSignup">
+
+  <div class="EventDetails p20">
+    <div class="EventTitle">Cincinnati Winter Beerfest</div>
+    <div class="EventPlanner">By Festivals Untitled LLC</div>
+    <div class="EventDate">September 10, 2014</div>
+    <div class="EventLocation">Duke Energy Convention Center <i class="fa fa-compass"></i></div> 
+
+  </div>
+
+
+
+  <div class="eventRegistrationContainer p20">
+
+    <div class="UserLogin">
+      <h1>Personal Details</h1>
+      <p>Some Fields are Required<span class="required">*</span></p>
+
+      <form action="" class="userInputModule">
+        <div class="userInput"><span class="labelTitle">Email Adress: </span><input type="text" name="EmailAddress" value="Email Address"><br></div>
+        <div class="userInput"><span class="labelTitle">First name: </span><input type="text" name="FirstName" value="First Name"><br></div>
+        <div class="userInput"><span class="labelTitle">Last name: </span><input type="text" name="LastName" value="Last Name"><br></div>
+        <div class="userInput"><span class="labelTitle">Age: </span><input type="text" name="Age" value="Age"><br></div>
+      </form>
+
+      <span class="">Shirt Size</span>
+      <select>
+        <option value="xsmall">Extra Small</option>
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+        <option value="xlarge">Extra Large</option>
+      </select>
+    
+
+
+    </div>
+
+    <div class="availabilityModule clearfix">
+      <h1>Time Signup</h1>
+      <p>Please select times that you are available to work from below</p>
+
+      <table class="availabilityTable clearfix" style="width:675px">
+      <tr>
+        <td class="bb1"></td>
+        <td class="Day bb1 bl1">Friday</td>		
+        <td class="Day bb1 bl1">Saturday</td>
+        <td class="Day bb1 bl1">Sunday</td>
+      </tr>
+      <tr>
+        <td class="Time bb1 highlight">6 am - 9 am</td>
+        <td class="bb1 bl1 highlight"><input type="checkbox" class="avalability" id="selectall"/>Available</td>		
+        <td class="bb1 bl1 highlight"><input type="checkbox" class="avalability" id="selectall"/>Available</td>  
+        <td class="bb1 bl1 highlight"><input type="checkbox" class="avalability" id="selectall"/>Available</td>  
+      </tr>
+      <tr>
+        <td class="Time bb1">9 am - 12 pm</td>
+        <td class="bb1 bl1"><input type="checkbox" class="avalability" id="selectall"/>Available</td>    
+        <td class="bb1 bl1"><input type="checkbox" class="avalability" id="selectall"/>Available</td>  
+        <td class="bb1 bl1"><input type="checkbox" class="avalability" id="selectall"/>Available</td>  
+      </tr>
+      <tr>
+        <td class="Time bb1 highlight">12 pm - 3 pm</td>
+        <td class="bb1 bl1 highlight"><input type="checkbox" class="avalability" id="selectall"/>Available</td>    
+        <td class="bb1 bl1 highlight"><input type="checkbox" class="avalability" id="selectall"/>Available</td>  
+        <td class="bb1 bl1 highlight"><input type="checkbox" class="avalability" id="selectall"/>Available</td>  
+      </tr>
+      <tr>
+        <td class="Time bb1">3 pm - 6 pm</td>
+        <td class="bb1 bl1"><input type="checkbox" class="avalability" id="selectall"/>Available</td>    
+        <td class="bb1 bl1"><input type="checkbox" class="avalability" id="selectall"/>Available</td>  
+        <td class="bb1 bl1"><input type="checkbox" class="avalability" id="selectall"/>Available</td>  
+      </tr>
+      <tr>
+        <td class="Time bb1 highlight">6 pm - 9 pm</td>
+        <td class="bb1 bl1 highlight"><input type="checkbox" class="avalability" id="selectall"/>Available</td>    
+        <td class="bb1 bl1 highlight"><input type="checkbox" class="avalability" id="selectall"/>Available</td>  
+        <td class="bb1 bl1 highlight"><input type="checkbox" class="avalability" id="selectall"/>Available</td>  
+      </tr>
+      <tr>
+        <td class="Time">9 pm - 12 am</td>
+        <td class="bl1"><input type="checkbox" class="avalability" id="selectall"/>Available</td>    
+        <td class="bl1"><input type="checkbox" class="avalability" id="selectall"/>Available</td>  
+        <td class="bl1"><input type="checkbox" class="avalability" id="selectall"/>Available</td>  
+      </tr>
+      </table>
+
+    </div>
+  </div>
+  <div class="volunteerButtonContainer clearfix">
+    <div class="volunteerButton">Signup to Volunteer</div>
+  </div>
+
+</div>
+
+</body>
+</html>
